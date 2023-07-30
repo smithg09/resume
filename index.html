@@ -12,6 +12,7 @@
 		style="width:100%; height:100%;display: none;" 
 		frameborder="0"
 	></iframe>
+	<a id="downloadLink" href="Resume.pdf" download></a>
     <script>
 		window.addEventListener('DOMContentLoaded', () => {
 			var hasPDFViewer = false;
@@ -35,6 +36,17 @@
 				if (webCompatibleDom && webCompatibleDom.style) {
 					webCompatibleDom.style.display = 'none';
 				}
+			}
+			try {
+				if (window && window.location && window.location.search) {
+					const searchString = window.location.search || '';
+					const donwloadLink = document.getElementById('downloadLink')
+					if (searchString.includes('download') && donwloadLink) {
+						donwloadLink.click();
+					}
+				}
+			} catch(e) {
+				console.log("Download Won't Work");
 			}
 		})
 

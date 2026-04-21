@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smith Gajjar — Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a1628;
+      --surface: #0d1e35;
+      --border: rgba(255,255,255,0.08);
+      --text: #e8edf5;
+      --muted: #6b7f99;
+      --accent: #8fa3bf;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 80% 20%, rgba(30, 60, 120, 0.45) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(10, 40, 90, 0.3) 0%, transparent 60%);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      border: 1px solid var(--border);
+      padding: 48px 40px;
+      max-width: 400px;
+      width: 90%;
+      background: rgba(13, 30, 53, 0.5);
+    }
+
+    .label {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    .sub {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+
+    .divider {
+      width: 32px;
+      height: 1px;
+      background: var(--border);
+      margin-bottom: 32px;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .btn:hover {
+      border-color: rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.06);
+    }
+
+    .btn .meta {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+      transition: color 0.15s;
+    }
+
+    .btn:hover .meta {
+      color: var(--accent);
+    }
+
+    .arrow {
+      font-size: 16px;
+      color: var(--muted);
+      transition: transform 0.15s, color 0.15s;
+    }
+
+    .btn:hover .arrow {
+      transform: translateY(2px);
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="label">Resume</div>
+    <h1>Smith Gajjar</h1>
+    <p class="sub">Senior Software Engineer</p>
+    <a class="btn" href="https://resume.smithgajjar.dev" target="_blank" style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px;text-decoration:none;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.03);color:#e8edf5;font-family:'DM Sans',sans-serif;font-size:14px;margin-bottom:24px;transition:border-color 0.15s,background 0.15s;" onmouseover="this.style.borderColor='rgba(255,255,255,0.2)';this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.03)'">
+      <div>
+        <div>View Resume</div>
+        <div class="meta">resume.smithgajjar.dev</div>
+      </div>
+      <span style="font-size:16px;color:#6b7f99;">↗</span>
+    </a>
+
+    <div class="divider"></div>
+    <div class="label" style="margin-bottom:16px;">Download</div>
+    <div class="btn-group">
+      <a class="btn" href="Smith_Gajjar_Resume_1_Page.pdf" download>
+        <div>
+          <div>One Page</div>
+          <div class="meta">Smith_Gajjar_Resume_1_Page.pdf</div>
+        </div>
+        <span class="arrow">↓</span>
+      </a>
+      <a class="btn" href="Smith_Gajjar_Resume.pdf" download>
+        <div>
+          <div>Full Resume</div>
+          <div class="meta">Smith_Gajjar_Resume.pdf</div>
+        </div>
+        <span class="arrow">↓</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

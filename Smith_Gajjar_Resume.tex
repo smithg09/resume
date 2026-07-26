@@ -1,0 +1,313 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% \usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{.8pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \large#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape \href{https://www.smithgajjar.dev/}{Smith Kamlesh Gajjar}} \\ 
+    Mumbai, Maharashtra, India \vspace{4pt} \\
+    % \href{tel:+919820554494}{ \raisebox{-0.1\height}\faPhone\ \underline{+91-9820554494} ~}
+    \href{mailto:smith.gajjar@gmail.com}
+    {\raisebox{-0.2\height}\faEnvelope\  \underline{smith.gajjar@gmail.com}} ~
+    \href{https://www.linkedin.com/in/smithg09/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{linkedin.com/in/smithg09}} ~
+    \href{https://www.smithgajjar.dev/}{\raisebox{-0.1\height}\faGlobe\  \underline{www.smithgajjar.dev}}  \vspace{4pt} ~
+    \href{https://github.com/smithg09}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/smithg09}}
+\end{center}
+
+%-----------About Me-----------
+\begin{center}
+\normalsize{Senior Software Engineer with 5+ years of experience across platform engineering, AI systems, and full-stack development. Led and shipped AI-powered products, developer platforms and tooling, GraphQL infrastructure, and customer-facing applications used by over 50M registered users across Codecademy and Skillsoft Percipio.}
+\end{center}
+% Experienced in remote-first teams, collaborating across time zones and shipping independently in async environments
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://www.codecademy.com/}{Codecademy (Skillsoft)}}{Remote} 
+      {\large{Senior Software Engineer}}{Jan 2024 -- Present}
+      \vspace{-6pt}
+      \item[]{\small{\textit{\textbf{Stack:} Node.js, Next.js, Golang, Ruby on Rails, GraphQL, LangGraph, RAG, Vectorless RAG, PostgreSQL, Kubernetes, Redis, RabbitMQ, AWS, Opentelemetry.}}}
+      \vspace{-3pt}
+      \resumeItemListStart
+
+    % \resumeItem{\normalsize{Designed \textbf{RAG and source-ingestion pipelines} over large document knowledge bases (chunking strategies, rerankers, structured source trees for citation-grade retrieval); adopted as shared infrastructure by \textbf{4+ teams}.}}
+
+    % \resumeItem{\normalsize{Re-architected Codecademy's \textbf{GraphQL Federation} split into consumer and enterprise graphs (Golang, Ruby on Rails) with isolated schemas, improved caching and automated type generation across the monorepo.}}
+
+        \resumeItem{\normalsize{Launched \textbf{LX Studio Spark}, an AI platform generating 8+ content types from user-uploaded documents, taking it from PoC to a production release across \textbf{20+ enterprise customers}, built its custom agent harness.}}
+
+        \resumeItem{\normalsize{Re-architected Codecademy's \textbf{GraphQL Federation} split into consumer and enterprise graphs in Golang with improved caching and isolated schemas, \textbf{cutting query latency by 40\%} (500ms to 300ms).}}
+
+        \resumeItem{\normalsize{Tech lead for Skillsoft's \textbf{first AI-native Builder pod}, a 3-engineer team owning product development
+end-to-end that shipped 2 products in under 6 months, a model that \textbf{scaled into 11 more pods org-wide}.}}
+
+        \resumeItem{\normalsize{Shipped Codecademy's \href{https://www.codecademy.com/resources/blog/why-the-future-of-learning-starts-with-building}{\underline{Vibe Learning Platform}}, a learn-by-building product where AI agents generate full-stack projects, to \textbf{10M+ active learners in 2 months} by building a LangGraph-based agentic engine.}}
+
+        \resumeItem{\normalsize{Co-developed Agentor, a shared agent framework library with multi-agent workflows, agent harness, MCP, guardrails and LLM evaluations, reducing new agent scaffolding for \textbf{5+ teams} and earning CTO recognition.}}
+
+        \resumeItem{\normalsize{Enabled Codecademy's expansion into 30+ countries by architecting and delivering internationalization (i18n) from scratch, shipping 40+ locales with RTL support across a shared Next.js monorepo.}}
+
+        \resumeItem{\normalsize{Built \textbf{ACE (AI Coding Extensions)}, an internal platform for sharing reusable agent tooling (skills,  subagents, plugins), used by \textbf{15+ engineering teams}, boosting reuse and accelerating AI-native development.}}
+
+        \resumeItem{\normalsize{Led migration of 1000+ videos to in-house infrastructure, shipping a \textbf{WCAG 2.1-compliant {\href{https://gamut.codecademy.com/?path=/docs/molecules-video--docs\#playground}{\underline{video player}}}} in the {\href{https://gamut.codecademy.com}{\underline{Gamut Design System}}} that improved accessibility and reduced load times via caching and HLS streaming.}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://illusto.com/}{Videoverse}}{Mumbai} 
+      {\large{Full Stack Developer}}{Oct 2023 -- Dec 2023}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Integrated and managed multi-region payment systems (Stripe, Razorpay, PhonePe), improving checkout success rates and regional compliance.}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+          {\href{https://www.theuolo.com/tekie.html} {\large{Tekie (Acquired by UOLO})}}{Remote}
+          {\large{Senior Full Stack Developer}}{Jun 2021 -- Oct 2023} \\
+          \vspace{2pt}
+          \item[]{\small{\textit{\textbf{Stack:} React, Node.js, GraphQL, React Native, Electron, MongoDB, Redis, Kubernetes}}}
+          \vspace{-3pt}
+          \resumeItemListStart
+              \resumeItem{\normalsize{Founding team engineer and backend/platform lead. Scaled a B2B and B2C EdTech platform serving \textbf{500k+ students across 1,000+ schools} with interactive coding curriculum.}}
+              \resumeItem{\normalsize{Built an internal GraphQL-based BaaS architecture, reducing API latency \textbf{from 2s to 300ms ($\sim$80\% reduction)} via schema redesign, query optimization, and Redis caching.}}
+              \resumeItem{\normalsize{Led GraphQL and platform \textbf{team of 7 engineers}, established code review standards and CI checks that reduced review cycle time and caught regressions before production.}}
+              \resumeItem{\normalsize{Scaled production infrastructure across Managed Kubernetes, MongoDB, PostgreSQL, built CI/CD with GitHub Actions, integrated AWS S3, Elastic Transcoder, and CloudFront.}}
+              \resumeItem{\normalsize{Improved \textbf{Core Web Vitals to 99th percentile} across web, mobile, and desktop via code-splitting, SSR, and server-side data prefetching.}}
+              \resumeItem{\normalsize{Delivered \textbf{5+ product PoCs}, an offline Python editor (WASM), a drag-and-drop Blockly playground, informed by on-site visits to 30+ schools to understand student and teacher workflows}}
+              \resumeItem{\normalsize{Established observability and analytics (New Relic, Sentry, ELK, GA/GTM/Looker Studio) to monitor and drive app health improvements.}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://invideo.io/}{InVideo}}{Mumbai} 
+      {\large{Front-end Developer Intern}}{Jun 2019 -- Jul 2019}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Built user-facing modules from Sketch/InVision designs into pixel-perfect responsive screens using Angular, SCSS, and TypeScript. Resolved cross-browser inconsistencies across 5+ browsers via BrowserStack.}}
+      \resumeItemListEnd  
+
+  \resumeSubHeadingListEnd
+  
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+
+\resumeProjectHeading
+    {\href{https://openplan.smithgajjar.dev}{{\underline{\normalsize{\textbf{Openplan} (openplan.smithgajjar.dev) }}}}}{}
+    \resumeItemListStart
+            \resumeItem{\normalsize{Golang CLI that intercepts an AI coding agent's plan step and opens it in a React-based browser UI to review, annotate, approve or deny the plan before any code is written.}}
+            \resumeItem{\normalsize{Built for agent harnesses like Claude Code, adding a human-in-the-loop review and approval layer to agentic coding workflows.}}
+    \resumeItemListEnd 
+    \vspace{-12pt}
+
+\resumeProjectHeading
+    {\href{https://devbox.smithgajjar.dev}{{\underline{\normalsize{\textbf{Devbox} (devbox.smithgajjar.dev)}}}}}{}
+    \resumeItemListStart
+            \resumeItem{\normalsize{Cross-platform developer toolbox bundling everyday utilities into a single offline app, reducing tool-switching overhead. Built with Tauri (Rust) and React.}}
+    \resumeItemListEnd 
+    \vspace{-12pt}
+
+    
+\resumeProjectHeading
+    {\href{https://arcgentic.smithgajjar.dev}{{\underline{\normalsize{\textbf{Arcgentic - AI Learning Platform} (arcgentic.smithgajjar.dev)}}}}}{}
+    \resumeItemListStart
+            \resumeItem{\normalsize{An agentic learning platform that generates personalized content like deep dives, roadmaps, slides, podcasts, and flashcards from a prompted topic or uploaded documents.}}
+            \resumeItem{\normalsize{Built around LangGraph orchestration layer with tools, skills and subagent routing in Python and with Go GraphQL microservice, and a React frontend, enabling progress tracking and generation of learning artifacts.}}
+    \resumeItemListEnd 
+    \vspace{-12pt}
+
+    
+\resumeProjectHeading
+    {\href{https://github.com/smithg09/lookahead}{{\underline{\normalsize{\textbf{Lookahead} (github.com/smithg09/lookahead)}}}}}{}
+    \resumeItemListStart
+            \resumeItem{\normalsize{Built a GraphQL query planning library that transforms nested GraphQL selection sets into recursive MongoDB aggregation pipelines, eliminating N+1 queries and reducing database calls by over 80\%.}}
+    \resumeItemListEnd 
+    \vspace{-12pt}
+
+    \resumeProjectHeading
+          {\href{https://github.com/smithg09/termis}{{\underline{\normalsize{\textbf{Termis} (github.com/smithg09/termis)}}}}}{}
+          \resumeItemListStart
+            \resumeItem{\normalsize{CLI tool to define iTerm2 terminal layouts and launch full development environments via YAML-based terminal configuration. Built using Python.}}
+          \resumeItemListEnd
+            \vspace{8pt}
+
+    % \resumeProjectHeading
+    % {\href{https://github.com/smithg09/sowgenx}{{\underline{\normalsize{\textbf{Statement of Work Generator} (github.com/smithg09/sowgenx) {\raisebox{-0.1\height}\faExternalLink }}}}}}{}
+    % \resumeItemListStart
+    %         \resumeItem{\normalsize{Full-stack AI tool to generate Statements of Work using multi-agent LangGraph workflows, memory-based retrieval (PGVector RAG), compliance checks, and user feedback loops. Built with React, Python (Flask), LangChain, and PostgreSQL.}}
+    % \resumeItemListEnd
+    % \vspace{-12pt}
+
+
+       % \resumeProjectHeading
+       %    {\href{https://github.com/smithg09/mongo-aggregation-builder}{{\underline{\normalsize{\textbf{mongodb-aggregation-builder} (github.com/smithg09/mongo-aggregation-builder) {\raisebox{-0.1\height}\faExternalLink }}}}}}{}
+       %    \resumeItemListStart
+       %      \resumeItem{\normalsize{Type-safe TypeScript library for building MongoDB aggregation pipelines with improved readability and developer experience}}
+       %      \resumeItemListEnd
+       %      \vspace{12pt}
+
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+     \textbf{\normalsize{Languages:}}{ \normalsize{TypeScript, JavaScript, Python, Go, Ruby.}} \\
+     \vspace{4pt}
+     \textbf{\normalsize{Frameworks:}}{ \normalsize{GraphQL, Next.js, Node.js, React, Ruby on Rails, Flask, Svelte, Angular, Tauri.}} \\
+    \vspace{4pt}
+    \textbf{\normalsize{Databases \& Queue:}}{ \normalsize{PostgreSQL, MongoDB, MySQL, Redis, Elasticsearch, RabbitMQ, SQS.}} \\
+    \vspace{4pt}
+    \textbf{\normalsize{Cloud \& DevOps:}}{ \normalsize{AWS, Docker, Kubernetes, GitHub Actions, Jenkins, Grafana.}} \\
+    \vspace{4pt}
+    \textbf{\normalsize{AI \& LLM Frameworks:}}{ \normalsize{LangGraph, LangChain, MCP (Model Context Protocol), A2A, agentic harness, RAG (PGVector, Pinecone), LLM evaluations (LLM-as-judge), RLHF \& SFT fine-tuning.}} \\
+    \vspace{4pt}
+    \textbf{\normalsize{Tools:}}{ \normalsize{Datadog, Sentry, New Relic, OpenTelemetry, JMeter, Playwright, Jest.}} \\
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Engineering in Computer Science}{2018 -- 2021}
+      {Vivekanand Education Society's Institute of Technology}{Mumbai, Maharashtra}
+    \resumeSubHeadingListEnd
+    \vspace{-8pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Diploma in Computer Engineering}{2015 -- 2018}
+      {K. J. Somaiya Polytechnic}{Mumbai, Maharashtra}
+  \resumeSubHeadingListEnd
+
+\end{document}
